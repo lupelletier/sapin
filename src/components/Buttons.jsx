@@ -71,7 +71,7 @@ export default function Buttons ( props ) {
         <div>
             {err && <h2>{err}</h2>}
             {isLoading && <h2>Loading...</h2>}
-            <h1>Th </h1>
+            <h1>sapin </h1>
             <button onClick={handleClick} SetSwitch='on'>Turn On</button>
             <button onClick={handleClickOff}  SetSwitch='off'>Turn Off</button>
         </div>
