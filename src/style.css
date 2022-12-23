@@ -1,0 +1,56 @@
+.config-button{
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+.config-button:hover{
+    background-color: #fff;
+    color: #76a98d;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+    justify-content: space-between;
+}
+.header h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+.lights-btn-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.lights-btn{
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    
+}
+
+.lights-control{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+}
