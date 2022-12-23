@@ -4,8 +4,7 @@ import { useCookies } from 'react-cookie';
 
 export default function Cookie() {
     const [code, setCode] = useState('');
-    const [cookies, setCookie, removeCookie] = useCookies(['code']);
-    
+    const [cookies, setCookie] = useCookies(['code']);
     function handleCookie() {
         setCookie('code', code, { path: '/' }, );
 

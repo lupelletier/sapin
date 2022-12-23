@@ -13,7 +13,7 @@ export default function Buttons () {
     const [isLoading, setIsLoading] = useState(false);
     const [err, setErr] = useState('');
     const [status, setStatus] = useState('');
-    const [cookies, setCookie, removeCookie] = useCookies(['status']);
+    const [cookies, setCookie] = useCookies(['status']);
     const codeCookie = new Cookies();
     const code = codeCookie.get('code', { path: '/' });
     
@@ -83,6 +83,7 @@ export default function Buttons () {
     };
     const handleCookie = () => {
         setCookie('status', status, { path: '/' });
+        console.log(cookies.status);
     }
     status && handleCookie();
 
