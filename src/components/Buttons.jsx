@@ -6,7 +6,6 @@ import { Cookies } from 'react-cookie';
 
 
 
-
 export default function Buttons () {
     
     const [state, setState] = useState({ setState: false });
@@ -14,14 +13,22 @@ export default function Buttons () {
     const [err, setErr] = useState('');
     const [status, setStatus] = useState('');
     const [cookies, setCookie] = useCookies(['status']);
+    const [counter, setCounter] = useState(10);
     const codeCookie = new Cookies();
     const code = codeCookie.get('code', { path: '/' });
-    
 
     const handleClickOn = async () => {
+        // after 1000000ms, call handleClickOff and switch off the lights
+
+        // useEffect{{
+        //     const timer = setTimeout(() => {
+        //         handleClickOff();
+        //     }, 1000000);
+        //     return () => clearTimeout(timer);
+        // }
+        setCounter(setTimeout( function() { handleClickOff()},10000, clearTimeout()), [counter]);
+        // hide the lights status 
         document.querySelector('.cookie').setAttribute("hidden",true)
-
-
         setStatus(undefined);
         setIsLoading(true);
         try {
@@ -100,7 +107,7 @@ export default function Buttons () {
 
                 <div className='lights-control'>
             <div className="lights-btn-control">
-
+            <div>Countdown: {counter}</div>
             <button className='lights-btn' onClick={handleClickOn}>Turn lights on</button>
             <button className='lights-btn' onClick={handleClickOff}>Turn lights off</button>
                 </div>

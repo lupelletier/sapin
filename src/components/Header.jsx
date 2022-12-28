@@ -22,10 +22,6 @@ export default function Header() {
             loop={Infinity}
             wrapper="h1"></Typical> */}
             </div>
-
-
-
-
         </div>
     );
     }
