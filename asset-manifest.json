@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sapin/static/css/main.7d2fdb0a.css",
+    "main.js": "/sapin/static/js/main.4c0c407c.js",
+    "static/js/787.88beaada.chunk.js": "/sapin/static/js/787.88beaada.chunk.js",
+    "index.html": "/sapin/index.html",
+    "main.7d2fdb0a.css.map": "/sapin/static/css/main.7d2fdb0a.css.map",
+    "main.4c0c407c.js.map": "/sapin/static/js/main.4c0c407c.js.map",
+    "787.88beaada.chunk.js.map": "/sapin/static/js/787.88beaada.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d2fdb0a.css",
+    "static/js/main.4c0c407c.js"
+  ]
+}
